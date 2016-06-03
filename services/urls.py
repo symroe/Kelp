@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.ServiceListView.as_view(), name="service_list"),
+    url(r'^add/$', views.ServiceAddView.as_view(), name="add_service"),
     url(r'^service/(?P<pk>[^/]+)$',
         views.ServiceDetailView.as_view(),
         name="service_detail"),
