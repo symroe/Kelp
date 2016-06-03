@@ -2,6 +2,10 @@ from django.views.generic import TemplateView, ListView, DetailView
 
 from .models import Service
 
+class AboutView(TemplateView):
+    template_name = "about_view.html"
+
+
 class ServiceAddView(TemplateView):
     template_name = "add_product.html"
 
