@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-12 text-center">
+
+        <div class="row">
+          <div class="col-lg-9 text-center">
+            <h1>{{ object.service_name }}</h1>
+            <h3>{{ object.provider.name }}</h3>
+            <p><a href="https://www.digitalmarketplace.service.gov.uk/g-cloud/services/{{ object.service_id }}" class="btn btn-info">View on G-Cloud</a></p>
+            <div class="gcloud_info" style="text-align:left">
+              {{ object.raw_html|safe }}
+            </div>
+          </div>
+          <div class="col-lg-3 text-center">
+            <p><button class="btn btn-primary">I've used this service</button></p>
+            <p><button class="btn btn-primary">I'm considering using this service</button></p>
+          </div>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}
+
+
+

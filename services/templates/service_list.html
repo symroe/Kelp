@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-12 text-center">
+      {% for supplier in object_list %}
+        <h2><a href="{{ supplier.get_absolute_url }}">{{ supplier.service_name }}</a></h2>
+        <h3>{{ supplier.provider.name }}</h3>
+        <hr />
+      {% endfor %}
+
+    </div>
+</div>
+{% endblock content %}
+
+
+
