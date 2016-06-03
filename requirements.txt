@@ -6,6 +6,6 @@ whitenoise==2.0.6
 dj-static
 django-toolbelt
 static3
-bootstrap3
+django-bootstrap3
 requests
 bs4
