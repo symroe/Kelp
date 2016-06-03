@@ -7,6 +7,9 @@ urlpatterns = [
     url(r'^service/(?P<pk>[^/]+)$',
         views.ServiceDetailView.as_view(),
         name="service_detail"),
+    url(r'^service/(?P<pk>[^/]+)/used_form$',
+        views.ServiceDetailUsedFormView.as_view(),
+        name="service_used_form_detail"),
 
     # url(r'^about/$', views.AboutView.as_view(), name="about_view"),
     # url(r'^league_table/$', views.LeagueTables.as_view(), name="league_table"),

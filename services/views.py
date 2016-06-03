@@ -11,3 +11,7 @@ class ServiceDetailView(DetailView):
     model = Service
     template_name = "service_detail.html"
 
+class ServiceDetailUsedFormView(DetailView):
+    model = Service
+    template_name = "service_detail_used_form.html"
+
